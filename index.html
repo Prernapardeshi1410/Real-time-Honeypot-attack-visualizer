@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Cyber Deception Dashboard</title>
+    <meta http-equiv="refresh" content="3" />
+    <style>
+      body {
+        background-color: #0f172a;
+        color: #e5e7eb;
+        font-family: Arial;
+        padding: 20px;
+      }
+      h1 {
+        color: #38bdf8;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #334155;
+        padding: 8px;
+        text-align: center;
+        color: #e5e7eb;
+      }
+
+      th {
+        background-color: #1e293b;
+      }
+      tr:nth-child(even) {
+        background-color: #020617;
+      }
+      .high {
+        color: #f87171;
+        font-weight: bold;
+      }
+      .medium {
+        color: #facc15;
+        font-weight: bold;
+      }
+      .low {
+        color: #4ade80;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🛡 Live Honeypot Attack Dashboard</h1>
+    <p>Auto-refresh every 3 seconds</p>
+    <h2>Total Attacks: {{ logs|length }}</h2>
+
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>IP</th>
+        <th>Username</th>
+        <th>Password</th>
+        <th>Severity</th>
+      </tr>
+
+      {% for log in logs %}
+      <tr>
+        <td>{{ log["timestamp"] }}</td>
+        <td>{{ log["ip"] }}</td>
+        <td>{{ log["data"].split(",")[0].split("=")[1] }}</td>
+        <td>********</td>
+
+        <td
+          class="{% if log['severity'] == 'CRITICAL' %}high {% elif log['severity'] == 'HIGH' %}high {% elif log['severity'] == 'MEDIUM' %}medium {% else %}low{% endif %}"
+        >
+          {{ log["severity"] }}
+        </td>
+      </tr>
+
+      {% endfor %}
+    </table>
+  </body>
+</html>
