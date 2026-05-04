@@ -1,0 +1,12 @@
+{"timestamp": "2026-03-05 23:39:14", "ip": "127.0.0.1", "severity": "CRITICAL", "attack_type": "Default Credential Attack", "data": "username=admin, password=SID4#@"}
+{"timestamp": "2026-03-05 23:39:14", "ip": "127.0.0.1", "severity": "CRITICAL", "attack_type": "Default Credential Attack", "data": "username=sysadmin, password=SID4#@"}
+{"timestamp": "2026-03-05 23:39:15", "ip": "127.0.0.1", "severity": "CRITICAL", "attack_type": "Brute Force Simulation", "data": "username=test, password=ami3288"}
+{"timestamp": "2026-03-05 23:39:15", "ip": "127.0.0.1", "severity": "CRITICAL", "attack_type": "Default Credential Attack", "data": "username=root, password=lala@"}
+{"timestamp": "2026-03-05 23:39:16", "ip": "127.0.0.1", "severity": "CRITICAL", "attack_type": "Default Credential Attack", "data": "username=sysadmin, password=653#g"}
+{"timestamp": "2026-03-05 23:39:16", "ip": "127.0.0.1", "severity": "CRITICAL", "attack_type": "Default Credential Attack", "data": "username=root, password=653#g"}
+{"timestamp": "2026-03-05 23:39:17", "ip": "127.0.0.1", "severity": "CRITICAL", "attack_type": "Brute Force Simulation", "data": "username=nick , password=hdg@jk"}
+{"timestamp": "2026-03-05 23:39:17", "ip": "127.0.0.1", "severity": "CRITICAL", "attack_type": "Brute Force Simulation", "data": "username=nick , password=lala@"}
+{"timestamp": "2026-03-05 23:39:18", "ip": "127.0.0.1", "severity": "CRITICAL", "attack_type": "Brute Force Simulation", "data": "username=amiee, password=653#g"}
+{"timestamp": "2026-03-05 23:39:18", "ip": "127.0.0.1", "severity": "CRITICAL", "attack_type": "Brute Force Simulation", "data": "username=operator, password=vhs*@54"}
+{"timestamp": "2026-03-05 23:39:19", "ip": "127.0.0.1", "severity": "CRITICAL", "attack_type": "Brute Force Simulation", "data": "username=amiee, password=mshv@$5"}
+{"timestamp": "2026-03-05 23:39:19", "ip": "127.0.0.1", "severity": "CRITICAL", "attack_type": "Brute Force Simulation", "data": "username=nick , password=123456"}
